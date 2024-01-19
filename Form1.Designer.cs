@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.label = new System.Windows.Forms.Label();
-            this.TxtData = new System.Windows.Forms.Label();
+            this.TxtDatatext = new System.Windows.Forms.Label();
             this.ComboEC = new System.Windows.Forms.Label();
-            this.TxtTelefone = new System.Windows.Forms.Label();
+            this.TxtTelefonetext = new System.Windows.Forms.Label();
             this.TxtNome = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.TxtData = new System.Windows.Forms.DateTimePicker();
+            this.TxtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.ComboECchack = new System.Windows.Forms.ComboBox();
             this.checkCasa = new System.Windows.Forms.CheckBox();
             this.checkVeiculo = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioM = new System.Windows.Forms.RadioButton();
-            this.radioF = new System.Windows.Forms.RadioButton();
             this.radioO = new System.Windows.Forms.RadioButton();
+            this.radioF = new System.Windows.Forms.RadioButton();
+            this.radioM = new System.Windows.Forms.RadioButton();
             this.lista = new System.Windows.Forms.ListBox();
             this.BtnCadastrar = new System.Windows.Forms.Button();
             this.BtnExcluir = new System.Windows.Forms.Button();
@@ -59,15 +59,15 @@
             this.label.TabIndex = 0;
             this.label.Text = "Nome";
             // 
-            // TxtData
+            // TxtDatatext
             // 
-            this.TxtData.AutoSize = true;
-            this.TxtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtData.Location = new System.Drawing.Point(13, 56);
-            this.TxtData.Name = "TxtData";
-            this.TxtData.Size = new System.Drawing.Size(206, 25);
-            this.TxtData.TabIndex = 1;
-            this.TxtData.Text = "Data de Nascimento";
+            this.TxtDatatext.AutoSize = true;
+            this.TxtDatatext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDatatext.Location = new System.Drawing.Point(13, 53);
+            this.TxtDatatext.Name = "TxtDatatext";
+            this.TxtDatatext.Size = new System.Drawing.Size(206, 25);
+            this.TxtDatatext.TabIndex = 1;
+            this.TxtDatatext.Text = "Data de Nascimento";
             // 
             // ComboEC
             // 
@@ -79,15 +79,15 @@
             this.ComboEC.TabIndex = 2;
             this.ComboEC.Text = "Estado Civil";
             // 
-            // TxtTelefone
+            // TxtTelefonetext
             // 
-            this.TxtTelefone.AutoSize = true;
-            this.TxtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelefone.Location = new System.Drawing.Point(13, 130);
-            this.TxtTelefone.Name = "TxtTelefone";
-            this.TxtTelefone.Size = new System.Drawing.Size(96, 25);
-            this.TxtTelefone.TabIndex = 3;
-            this.TxtTelefone.Text = "Telefone";
+            this.TxtTelefonetext.AutoSize = true;
+            this.TxtTelefonetext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTelefonetext.Location = new System.Drawing.Point(13, 130);
+            this.TxtTelefonetext.Name = "TxtTelefonetext";
+            this.TxtTelefonetext.Size = new System.Drawing.Size(96, 25);
+            this.TxtTelefonetext.TabIndex = 3;
+            this.TxtTelefonetext.Text = "Telefone";
             // 
             // TxtNome
             // 
@@ -97,22 +97,22 @@
             this.TxtNome.Size = new System.Drawing.Size(421, 31);
             this.TxtNome.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // TxtData
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(337, 53);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(421, 31);
-            this.dateTimePicker1.TabIndex = 8;
+            this.TxtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtData.Location = new System.Drawing.Point(337, 53);
+            this.TxtData.Name = "TxtData";
+            this.TxtData.Size = new System.Drawing.Size(421, 31);
+            this.TxtData.TabIndex = 8;
             // 
-            // maskedTextBox1
+            // TxtTelefone
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(337, 130);
-            this.maskedTextBox1.Mask = "(00) 00000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(421, 31);
-            this.maskedTextBox1.TabIndex = 9;
+            this.TxtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTelefone.Location = new System.Drawing.Point(337, 130);
+            this.TxtTelefone.Mask = "(00) 00000-0000";
+            this.TxtTelefone.Name = "TxtTelefone";
+            this.TxtTelefone.Size = new System.Drawing.Size(421, 31);
+            this.TxtTelefone.TabIndex = 9;
             // 
             // ComboECchack
             // 
@@ -158,17 +158,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sexo";
             // 
-            // radioM
+            // radioO
             // 
-            this.radioM.AutoSize = true;
-            this.radioM.Checked = true;
-            this.radioM.Location = new System.Drawing.Point(7, 20);
-            this.radioM.Name = "radioM";
-            this.radioM.Size = new System.Drawing.Size(73, 17);
-            this.radioM.TabIndex = 0;
-            this.radioM.TabStop = true;
-            this.radioM.Text = "Masculino";
-            this.radioM.UseVisualStyleBackColor = true;
+            this.radioO.AutoSize = true;
+            this.radioO.Location = new System.Drawing.Point(7, 67);
+            this.radioO.Name = "radioO";
+            this.radioO.Size = new System.Drawing.Size(51, 17);
+            this.radioO.TabIndex = 2;
+            this.radioO.TabStop = true;
+            this.radioO.Text = "Outro";
+            this.radioO.UseVisualStyleBackColor = true;
             // 
             // radioF
             // 
@@ -181,16 +180,17 @@
             this.radioF.Text = "Feminino";
             this.radioF.UseVisualStyleBackColor = true;
             // 
-            // radioO
+            // radioM
             // 
-            this.radioO.AutoSize = true;
-            this.radioO.Location = new System.Drawing.Point(7, 67);
-            this.radioO.Name = "radioO";
-            this.radioO.Size = new System.Drawing.Size(51, 17);
-            this.radioO.TabIndex = 2;
-            this.radioO.TabStop = true;
-            this.radioO.Text = "Outro";
-            this.radioO.UseVisualStyleBackColor = true;
+            this.radioM.AutoSize = true;
+            this.radioM.Checked = true;
+            this.radioM.Location = new System.Drawing.Point(7, 20);
+            this.radioM.Name = "radioM";
+            this.radioM.Size = new System.Drawing.Size(73, 17);
+            this.radioM.TabIndex = 0;
+            this.radioM.TabStop = true;
+            this.radioM.Text = "Masculino";
+            this.radioM.UseVisualStyleBackColor = true;
             // 
             // lista
             // 
@@ -243,12 +243,12 @@
             this.Controls.Add(this.checkVeiculo);
             this.Controls.Add(this.checkCasa);
             this.Controls.Add(this.ComboECchack);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.TxtNome);
             this.Controls.Add(this.TxtTelefone);
-            this.Controls.Add(this.ComboEC);
             this.Controls.Add(this.TxtData);
+            this.Controls.Add(this.TxtNome);
+            this.Controls.Add(this.TxtTelefonetext);
+            this.Controls.Add(this.ComboEC);
+            this.Controls.Add(this.TxtDatatext);
             this.Controls.Add(this.label);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -264,12 +264,12 @@
         #endregion
 
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Label TxtData;
+        private System.Windows.Forms.Label TxtDatatext;
         private System.Windows.Forms.Label ComboEC;
-        private System.Windows.Forms.Label TxtTelefone;
+        private System.Windows.Forms.Label TxtTelefonetext;
         private System.Windows.Forms.TextBox TxtNome;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.DateTimePicker TxtData;
+        private System.Windows.Forms.MaskedTextBox TxtTelefone;
         private System.Windows.Forms.ComboBox ComboECchack;
         private System.Windows.Forms.CheckBox checkCasa;
         private System.Windows.Forms.CheckBox checkVeiculo;

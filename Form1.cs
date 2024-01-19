@@ -78,9 +78,24 @@ namespace SistemaCadastro
             Pessoa p = new Pessoa();
             p.Nome = TxtNome.Text;
             p.DataNascimento = TxtData.Text;
-            
+            p.EstadoCivil = ComboECchack.SelectedItem.ToString();
             p.Telefone = TxtTelefone.Text;
+            p.Casa = checkCasa.Checked;
+            p.Veiculo = checkVeiculo.Checked;
+            p.Sexo = sexo;
 
+            if (index < 0)
+            {
+                pessoas.Add(p);
+            }
+            else
+            {
+                pessoas[index] = p;
+            }
+
+            BtnLimpar_Click(BtnLimpar, EventArgs.Empty);
+
+            Listar();
         }
 
         private void BtnExcluir_Click(object sender, EventArgs e)
@@ -90,7 +105,9 @@ namespace SistemaCadastro
 
         private void BtnLimpar_Click(object sender, EventArgs e)
         {
-
+            TxtNome.Text = "";
+            TxtData.Text = "";
+            ComboECchack.SelectedItem = 0;
         }
 
          private void Listar()
