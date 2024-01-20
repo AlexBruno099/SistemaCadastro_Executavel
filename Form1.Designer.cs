@@ -1,4 +1,6 @@
-﻿namespace SistemaCadastro
+﻿using System;
+
+namespace SistemaCadastro
 {
     partial class Form1
     {
@@ -91,6 +93,7 @@
             // 
             // TxtNome
             // 
+            this.TxtNome.BackColor = System.Drawing.Color.AliceBlue;
             this.TxtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNome.Location = new System.Drawing.Point(337, 15);
             this.TxtNome.Name = "TxtNome";
@@ -99,6 +102,8 @@
             // 
             // TxtData
             // 
+            this.TxtData.CalendarMonthBackground = System.Drawing.Color.AliceBlue;
+            this.TxtData.CalendarTrailingForeColor = System.Drawing.SystemColors.Desktop;
             this.TxtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtData.Location = new System.Drawing.Point(337, 53);
             this.TxtData.Name = "TxtData";
@@ -107,6 +112,7 @@
             // 
             // TxtTelefone
             // 
+            this.TxtTelefone.BackColor = System.Drawing.Color.AliceBlue;
             this.TxtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTelefone.Location = new System.Drawing.Point(337, 130);
             this.TxtTelefone.Mask = "(00) 00000-0000";
@@ -116,6 +122,7 @@
             // 
             // ComboECchack
             // 
+            this.ComboECchack.BackColor = System.Drawing.Color.AliceBlue;
             this.ComboECchack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboECchack.FormattingEnabled = true;
             this.ComboECchack.Items.AddRange(new object[] {
@@ -234,6 +241,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 527);
             this.Controls.Add(this.BtnLimpar);
             this.Controls.Add(this.BtnExcluir);
@@ -281,6 +289,7 @@
         private System.Windows.Forms.Button BtnCadastrar;
         private System.Windows.Forms.Button BtnExcluir;
         private System.Windows.Forms.Button BtnLimpar;
+        private EventHandler comboBox1_SelectedIndexChanged;
     }
 }
 

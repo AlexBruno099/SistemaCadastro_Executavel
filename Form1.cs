@@ -33,19 +33,13 @@ namespace SistemaCadastro
         {
 
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnCadastrar_Click(object sender, EventArgs e)
         {
             int index = -1;
 
             foreach(Pessoa pessoa in pessoas)
             {
-                if (pessoa.Nome == label.Text)
+                if (pessoa.Nome == TxtNome.Text)
                 {
                     index = pessoas.IndexOf(pessoa);
                 }
@@ -56,7 +50,7 @@ namespace SistemaCadastro
                 TxtNome.Focus();
                 return;
             }
-            if (TxtTelefone.Text == "")
+            if (TxtTelefone.Text == "(  )      -")
             {
                 MessageBox.Show("Preencha o campo Telefone.");
                 TxtTelefone.Focus();
@@ -100,6 +94,9 @@ namespace SistemaCadastro
 
         private void BtnExcluir_Click(object sender, EventArgs e)
         {
+            int indice = lista.SelectedIndex;
+            pessoas.RemoveAt(indice);
+            Listar();
 
         }
 
@@ -108,6 +105,14 @@ namespace SistemaCadastro
             TxtNome.Text = "";
             TxtData.Text = "";
             ComboECchack.SelectedItem = 0;
+            TxtTelefone.Text = "";
+            checkCasa.Checked = false;
+            checkVeiculo.Checked = false;
+            radioM.Checked = true;
+            radioF.Checked = false;
+            radioO.Checked = false;
+            TxtNome.Focus();
+
         }
 
          private void Listar()
